@@ -1,0 +1,55 @@
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+  1             3               yes             0.5     0.5
+
+[atomtypes]
+;name     mass      charge   ptype    sigma        epsilon
+CA   12.01115       -0.115      A   0.355          0.293
+CL   12.01115       0.000       A   0.33           0.419
+CAL  12.01115       0.000       A   0.355          0.293
+HA   1.00797        0.115       A   0.25           0.1257
+
+;[moleculetype]
+; name nrexcl
+;PPE      2
+
+[ bondtypes ]
+; i    j func        b0          kb
+   CL 	  CL    1       0.121      481800.0
+   CL  	  CAL   1       0.1451     167600.0
+   CA     CA    1       0.14       196500.0
+   CA     HA    1       0.108      153800.0
+   CAL    CA    1       0.14       196500.0 
+
+[ angletypes ]
+; i     j       k       funct   angle   force.c.
+  CAL  CL  CL     1    180.0   670.4
+  CAL  CA  CA     1    120.0   263.97
+  CAL  CA  HA     1    120.0   146.65
+  CA   CA  CA     1    120.0   263.97
+  CA   CA  HA     1    120.0   146.65  
+  CA   CAL CA     1    120.0   263.97
+  CA   CAL CL     1    120.0   293.3
+
+[ dihedraltypes ]
+;atom1 atom2 atom3 atom4      funct            C0            C1        C2            C3      C4      C5
+CA       CAL       CL       CL       3         0.0000        0        -0.0000        0       0       0  ;9
+CA       CA        CAL      CL       3        30.3775        0       -30.3775        0       0       0  ;11
+CL       CAL       CA       HA       3        30.3775        0       -30.3775        0       0       0  ;7
+CA       CA        CA       CAL      3        30.3775        0       -30.3775        0       0       0  ;2
+CA       CA        CA       CA       3        30.3775        0       -30.3775        0       0       0  ;5
+CAL      CA        CA       HA       3        30.3775        0       -30.3775        0       0       0  ;4
+CA       CA        CAL      CA       3        30.3775        0       -30.3775        0       0       0  ;6,8
+CAL      CL        CL       CAL      3         0.0000        0        -0.0000        0       0       0  ;10
+CA       CA        CAL      CL       3        30.3775        0       -30.3775        0       0       0  ;11
+HA       CA        CA       HA       3        30.3775        0       -30.3775        0       0       0  ;3
+HA       CA        CA       CA       3        30.3775        0       -30.3775        0       0       0  ;1 care for this
+CA       CAL       CA       HA       3        30.3775        0       -30.3775        0       0       0  ;12 is like 1
+
+; improper dihedrals to keep things flat
+;CA CAL CA HA      2   0.00000     167.400000
+;CA CA  CA  HA      2   0.00000     167.400000
+;CAL CA CLT CA      2   0.00000     167.400000
+;CA  CA HA CA      2   0.00000     167.400000
+;adding improper dihedral for keeping the interaction from CAL to liker flat
+CA   CL   CA   CAL   2   0.00000   96.9578

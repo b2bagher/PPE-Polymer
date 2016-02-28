@@ -1,0 +1,7 @@
+final set of parameters for improper dihedrals, this set of parameters ae with new dihedral parameters, added missing dihedals in the top file
+and commenting out that improper dihedrals for the hydrogens to be flat, 
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+k               = 96.9578          +/- 2.236        (2.306%)

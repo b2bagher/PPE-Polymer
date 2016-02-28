@@ -1,0 +1,11 @@
+#improper data for DPE-H, fixed the missing prope dihedals in the top file from residue.itp and forcefield.itp files, deleted the impropers that we manually put for 
+#the ring  to keep it flat, and added the midding dihedral from fitting the proper-dihedral fit of DPE-H, finally fixed the improper dihedral of the CAL to linker, note
+#that we need to add this improper in ETH (Linker) residue since it has residue number 2 and one more and one less then gromacs and pdb2gmx will recognize it
+#angles    #modifiedFF(without improper)   #QM    #modified-modifiedFF(with impropers)
+0       0              0             0       
+5       1.78335        2.07994       2.1489  
+10      7.07877        8.31206       8.45837 
+15      15.742         18.7018       18.5841 
+20      27.5976        33.2707       32.0926 
+25      42.4566        52.0085       48.5395 
+                                              

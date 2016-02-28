@@ -1,0 +1,26 @@
+#final parameters have to be divided by 4:
+#1.0690825        0.00106147      -1.066365     -0.002383463     -0.003605325    0.001465803
+#This set of parameters are the final that I changed the dihedrals in residues.itp file to be sure that
+#all the dihedrals exists and I deleted the impropers that we put for the hydrogens to be flat since I
+#belive by making sure that all the parameters from Grest exsist in the dihderal part it doesn't need that
+#manual improers and with that parameters are enough to keep the HA of the rings flat.
+#angle     #originalFF   #QM-B3lyp    #modifiedFF
+0          0             0             0
+10        -0.009739      0.114245      0.115378 
+20        -0.043363      0.451913      0.458488 
+30        -0.091559      0.975544      0.977968 
+40        -0.14353       1.62379       1.62526 
+50        -0.202339      2.31193       2.30656 
+60        -0.25292       2.9557        2.95706 
+70        -0.291604      3.48065       3.48667 
+80        -0.322678      3.82937       3.82961 
+90        -0.329457      3.94106       3.95003 
+100       -0.322872      3.82937       3.82801 
+110       -0.295052      3.48065       3.48274 
+120       -0.253896      2.9557        2.95389 
+130       -0.204417      2.31193       2.30601 
+140       -0.146572      1.62379       1.62183 
+150       -0.089486      0.975544      0.977203 
+160       -0.044788      0.451913      0.456062 
+170       -0.011616      0.114245      0.11617 
+180       -0.000656      0             -0.003445 

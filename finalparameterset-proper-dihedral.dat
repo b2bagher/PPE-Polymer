@@ -1,0 +1,16 @@
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a0              = 4.27633          +/- 0.002042     (0.04774%)
+a1              = 0.00424588       +/- 0.00759      (178.8%)
+a2              = -4.26546         +/- 0.01045      (0.2449%)
+a3              = -0.00953385      +/- 0.02577      (270.3%)
+a4              = -0.0144213       +/- 0.009914     (68.75%)
+a5              = 0.00586321       +/- 0.01987      (338.9%)
+
+final parameters have to be divided by 4:
+1.0690825        0.00106147      -1.066365     -0.002383463     -0.003605325    0.001465803
+This set of parameters are the final that I changed the dihedrals in residues.itp file to be sure that
+all the dihedrals exists and I deleted the impropers that we put for the hydrogens to be flat since I
+belive by making sure that all the parameters from Grest exsist in the dihderal part it doesn't need that
+manual improers and with that parameters are enough to keep the HA of the rings flat.
